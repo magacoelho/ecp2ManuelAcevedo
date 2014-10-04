@@ -41,5 +41,9 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
+    public Point multiplica(Point p1, Point p2)
+    {
+    	return null;
+    }
     
 }
