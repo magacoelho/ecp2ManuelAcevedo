@@ -2,38 +2,48 @@ package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class DecimalCollectionTest {
-
+    DecimalCollection  dc;
+    @Before
+    public void before() {
+        dc = new DecimalCollection();
+     
+    }
 	@Test
 	public void testDecimalCollection() {
-		fail("Not yet implemented");
+		//assertNotNull(dc.);
+	   assertEquals(dc.size(), 0);
 	}
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		dc.add(0.4);
+		assertEquals(dc.size(), 1);
 	}
 
 	@Test
 	public void testSize() {
-		fail("Not yet implemented");
+		dc.add(0.2);
+		dc.add(0.3);
+		assertEquals(2,dc.size());
 	}
 
 	@Test
 	public void testSum() {
-		fail("Not yet implemented");
+		dc.add(0.2);
+		dc.add(0.3);
+		assertEquals( 0.5, dc.sum(), 10e-5);
 	}
 
 	@Test
 	public void testHigher() {
-		fail("Not yet implemented");
+		dc.add(0.9);
+		dc.add(0.1);
+		assertEquals(0.9, dc.higher(), 10e-5);
 	}
 
-	@Test
-	public void testMenor() {
-		fail("Not yet implemented");
-	}
-
+	
 }

@@ -34,9 +34,4 @@ public class DecimalCollection {
         }
         return higher;
     }
-    public double menor(){
-    	
-    	return 0.0;
-    	
-    }
-}
+   }

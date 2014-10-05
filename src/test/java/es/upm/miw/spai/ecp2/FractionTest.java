@@ -19,15 +19,15 @@ public class FractionTest {
 		  
 	  }
 	  
-	  
 	  @Test
 	  public void testFraction(){
 		  fr= new Fraction();
 		  assertEquals(1, fr.getNumerator());
 		  assertEquals(1, fr.getDenominator());
 	  }
-	  public void testDdecimal() {
-		    assertEquals(0.6666666666666667,fr.decimal(), 0.01);
+	  @Test
+	  public void testDecimal() {
+		    assertEquals(0.6666666666666667,fr.decimal(), 10e-10);
 		}
 
 }
