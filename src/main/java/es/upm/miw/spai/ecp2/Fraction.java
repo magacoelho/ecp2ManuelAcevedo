@@ -68,5 +68,7 @@ public class Fraction {
         return f1.numerator * f2.denominator == f1.denominator * f2.numerator;
     }
     
-    
+    public Fraction Menor (Fraction fraction){
+    	return null;
+    }
 }
