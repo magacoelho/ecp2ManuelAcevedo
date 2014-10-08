@@ -1,6 +1,7 @@
 package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 import static org.junit.Assert.fail;
 
 import org.junit.Before;
@@ -47,6 +48,11 @@ public class PointTest {
     @Test
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
+    }
+    
+    @Test
+    public void testMultiplica(){
+    	assertSame( new Point(4,4), pt.multiplica( new Point(2,2), new Point(2,2)));
     }
     
   }
