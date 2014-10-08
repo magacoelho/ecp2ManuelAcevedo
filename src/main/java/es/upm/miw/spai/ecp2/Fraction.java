@@ -65,7 +65,7 @@ public class Fraction {
     }
     
     public boolean isEquivalente (Fraction f1, Fraction f2){
-        return f1.numerator * f2.denominator == f1.denominator * f2.denominator;
+        return f1.numerator * f2.denominator == f1.denominator * f2.numerator;
     }
     
     
