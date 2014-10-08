@@ -29,5 +29,10 @@ public class FractionTest {
 	  public void testDecimal() {
 		    assertEquals(0.6666666666666667,fr.decimal(), 10e-10);
 		}
+	  
+	  @Test
+	  public void testIsEquivalente(){
+		  assertTrue(fr.isEquivalente(new Fraction(1,2), new Fraction(2,4)));
+	  }
 
 }

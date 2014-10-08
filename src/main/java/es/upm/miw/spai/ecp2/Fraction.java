@@ -59,5 +59,14 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
+    public boolean isMayor(Fraction f1){
+    	return this.decimal() > f1.decimal();
+    	
+    }
+    
+    public boolean isEquivalente (Fraction f1, Fraction f2){
+        return f1.numerator * f2.denominator == f1.denominator * f2.denominator;
+    }
+    
     
 }
