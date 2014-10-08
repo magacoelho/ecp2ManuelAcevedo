@@ -2,7 +2,6 @@ package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertSame;
-import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
