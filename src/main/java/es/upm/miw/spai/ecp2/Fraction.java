@@ -35,40 +35,43 @@ package es.upm.miw.spai.ecp2;
  * 
  */
 public class Fraction {
-    private int numerator;
+	private int numerator;
 
-    private int denominator;
+	private int denominator;
 
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
-    }
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+	}
 
-    public Fraction() {
-        this(1, 1);
-    }
+	public Fraction() {
+		this(1, 1);
+	}
 
-    public int getNumerator() {
-        return numerator;
-    }
+	public int getNumerator() {
+		return numerator;
+	}
 
-    public int getDenominator() {
-        return denominator;
-    }
+	public int getDenominator() {
+		return denominator;
+	}
 
-    public double decimal() {
-        return (double) numerator / denominator;
-    }
-    public boolean isMayor(Fraction f1){
-    	return this.decimal() > f1.decimal();
-    	
-    }
-    
-    public boolean isEquivalente (Fraction f1, Fraction f2){
-        return f1.numerator * f2.denominator == f1.denominator * f2.numerator;
-    }
-    
-    public Fraction Menor (Fraction fraction){
-    	return null;
-    }
+	public double decimal() {
+		return (double) numerator / denominator;
+	}
+	public boolean isMayor(Fraction f1){
+		return this.decimal() > f1.decimal();
+
+	}
+
+	public boolean isEquivalente (Fraction f1, Fraction f2){
+		return f1.numerator * f2.denominator == f1.denominator * f2.numerator;
+	}
+
+	public Fraction Menor (Fraction fraction){
+		if (fraction.decimal()<this.decimal())
+			return fraction;
+		else 
+			return this;
+	}
 }
