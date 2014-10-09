@@ -51,7 +51,9 @@ public class PointTest {
     
     @Test
     public void testMultiplica(){
-    	assertSame( new Point(4,4), pt.multiplica( new Point(2,2), new Point(2,2)));
+    	Point a = pt.multiplica( new Point(2,2), new Point(2,2));
+    	assertEquals(4, a.getX());
+    	assertEquals(4, a.getY());
     }
     
   }
