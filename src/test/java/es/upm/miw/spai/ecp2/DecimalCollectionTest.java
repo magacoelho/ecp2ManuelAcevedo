@@ -7,6 +7,7 @@ import org.junit.Test;
 
 public class DecimalCollectionTest {
     DecimalCollection  dc;
+    DecimalCollection  dc2;
     @Before
     public void before() {
         dc = new DecimalCollection();
@@ -43,6 +44,14 @@ public class DecimalCollectionTest {
 		dc.add(0.9);
 		dc.add(0.1);
 		assertEquals(0.9, dc.higher(), 10e-5);
+	}
+	
+	@Test
+	public void menorColeccion() {
+		dc2.add(1.5);
+		dc2.add(0.5);
+		dc2.add(3.1);
+		assertEquals(0.5, dc2.menorColeccion(), 10e-5);
 	}
 
 	

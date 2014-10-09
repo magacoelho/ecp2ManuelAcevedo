@@ -34,5 +34,17 @@ public class FractionTest {
 	  public void testIsEquivalente(){
 		  assertTrue(fr.isEquivalente(new Fraction(1,2), new Fraction(2,4)));
 	  }
+	  
+	  @Test
+	  public void testMenor(){
+		  Fraction fr1 = new Fraction (1,3);
+		  Fraction fr2 = new Fraction (1,2);
+		  assertEquals(fr1, fr1.Menor(fr2));
+	  }
+	  @Test
+	  public void testIsMayor(){
+		  
+		  assertEquals(true, fr.isMayor(new Fraction(1, 4)));
+	  }
 
 }
