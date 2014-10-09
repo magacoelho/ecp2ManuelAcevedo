@@ -41,5 +41,10 @@ public class FractionTest {
 		  Fraction fr2 = new Fraction (1,2);
 		  assertEquals(fr1, fr1.Menor(fr2));
 	  }
+	  @Test
+	  public void testIsMayor(){
+		  
+		  assertEquals(true, fr.isMayor(new Fraction(1, 4)));
+	  }
 
 }
