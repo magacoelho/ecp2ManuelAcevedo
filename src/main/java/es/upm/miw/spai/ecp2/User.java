@@ -39,6 +39,6 @@ public class User {
     }
     
     public String nomMayuscula(){
-    	return "MANUEL";
+    	return this.name.toUpperCase();
     }
 }
